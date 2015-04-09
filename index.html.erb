@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analyze chrome</title>
+  <script src="//www.google.com/jsapi"></script>
+  <script src="chartkick.js"></script>
+</head>
+
+<body>
+  <p>По дням</p>
+  
+  <%= line_chart @by_date %>
+  <p>По часам</p>
+  <%= column_chart@by_hour %>
+  <p>По словам</p>
+  <%= bar_chart @by_words %>
+</body>
+
+</html>
